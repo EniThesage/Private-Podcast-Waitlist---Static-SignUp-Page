@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Private Podcast Waitlist</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="container">
   <header>
     <h1>
       Join the Private Podcast Waitlist
@@ -19,12 +21,20 @@
       Get Early Access
     </h2>
     <form action="#">
-      <div class="form-group">
-        <label for ="full-name">Full Name:
-        </label>
-        <br />
-        <input type="text" id="full-name" name="full-name" 
-        placeholder="Enter Full-name" required />
+      <div class="form-row">
+        <div class="form-group-name">
+          <label for ="first-name">First Name:
+          </label>
+          <input type="text" id="first-name" name="first-name" 
+          placeholder="Enter First Name" autofocus required />
+        </div>
+
+        <div class="form-group-name">
+          <label for ="last-name">Last Name:
+          </label>
+          <input type="text" id="last-name" name="last-name" 
+          placeholder="Enter Last Name" required />
+        </div>
       </div>
 
       <div class="form-group">
@@ -48,15 +58,29 @@
           </option>
           <option value="creative">Creative Stories
           </option>
+          <option value="life">Lifestyle
+          </option>
+          <option value="relationship">Relationships
+          </option>
+          <option value="health">Health and Wellness
+          </option>
+          <option value="news">News and Current Events
+          </option>
+          <option value="unfiltered">Unfiltered Conversations
+          </option>
         </select>
       </div>
-      <button type="submit">
-        Join Waitlist
-      </button>
+
+      <div class="button-container">
+        <button type="submit">
+          Join Waitlist
+        </button>
+      </div>
     </form>
   </section> 
   <footer>
     <p> © 2026 Private Podcast. All rights reserved.</p>
   </footer>
+  </div>
 </body>
 </html>

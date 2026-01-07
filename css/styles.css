@@ -112,7 +112,7 @@ input:focus, select:focus {
 }
 
 
-button {
+button.waitlist {
     background-color: #4A90E2;
     color: #fff;
     padding: 15px;
@@ -126,7 +126,7 @@ button {
     text-align: center;
 }
 
-button:hover {
+button.waitlist:hover {
    opacity: 0.7;
    border: 2px solid rgb(70, 68, 68);
 }
@@ -135,6 +135,73 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+p.infomation {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.divider {
+    display: flex;
+    text-align: center;
+    margin: 30px 0;
+    color: #666;
+    font-size: 14px;
+    align-items: center;
+}
+
+.divider::before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider span {
+    padding: 0 12px;
+    white-space: nowrap;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.social-login {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-login a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.social-login a:hover {
+    opacity: 0.7;
 }
 
 footer {

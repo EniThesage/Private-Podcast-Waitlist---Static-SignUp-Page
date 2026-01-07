@@ -8,76 +8,115 @@
 </head>
 <body>
   <div class="container">
-  <header>
-    <h1>
-      Join the Private Podcast Waitlist
-    </h1>
-    <p>
-      Sign up now to be the first to know when our exclusive private podcast launches!
-    </p>
-  </header> 
-  <section>
-    <h2>
-      Get Early Access
-    </h2>
-    <form action="#">
-      <div class="form-row">
-        <div class="form-group-name">
-          <label for ="first-name">First Name:
-          </label>
-          <input type="text" id="first-name" name="first-name" 
-          placeholder="Enter First Name" autofocus required />
+    <header>
+      <h1>
+        Join the Private Podcast Waitlist
+      </h1>
+      <p>
+        Sign up now to be the first to know when our exclusive private podcast launches!
+      </p>
+    </header> 
+    <section>
+      <h2>
+        Get Early Access
+      </h2>
+      <form action="#">
+        <div class="form-row">
+          <div class="form-group-name">
+            <label for ="first-name">First Name:
+            </label>
+            <input type="text" id="first-name" name="first-name" 
+            placeholder="Enter First Name" autofocus required />
+          </div>
+
+          <div class="form-group-name">
+            <label for ="last-name">Last Name:
+            </label>
+            <input type="text" id="last-name" name="last-name" 
+            placeholder="Enter Last Name" required />
+          </div>
         </div>
 
-        <div class="form-group-name">
-          <label for ="last-name">Last Name:
+        <div class="form-group">
+          <label for ="email">Email:
           </label>
-          <input type="text" id="last-name" name="last-name" 
-          placeholder="Enter Last Name" required />
+          <br />
+          <input type="email" id="email"
+          placeholder="Enter Your Email" required />
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for ="email">Email:
-        </label>
-        <br />
-        <input type="email" id="email"
-        placeholder="Enter Your Email" required />
-      </div>
+        <div class="form-group">
+          <label for ="interest">Listening Preference:
+          </label>
+          <br />
+          <select     name="interest" id="interest" required>
+            <option value="">Select an option
+            </option>
+            <option value="tech">Tech and Career
+            </option>
+            <option value="growth">Personal Growth
+            </option>
+            <option value="creative">Creative Stories
+            </option>
+            <option value="life">Lifestyle
+            </option>
+            <option value="relationship">Relationships
+            </option>
+            <option value="health">Health and Wellness
+            </option>
+            <option value="news">News and Current Events
+            </option>
+            <option value="unfiltered">Unfiltered Conversations
+            </option>
+          </select>
+        </div>
+        <div        class="button-container">
+          <button type="submit" class="waitlist">
+            Join Waitlist
+          </button>
+        </div>
 
-      <div class="form-group">
-        <label for ="interest">Listening Preference:
-        </label>
-        <br />
-        <select name="interest" id="interest" required>
-          <option value="">Select an option
-          </option>
-          <option value="tech">Tech and Careeer
-          </option>
-          <option value="growth">Personal Growth
-          </option>
-          <option value="creative">Creative Stories
-          </option>
-          <option value="life">Lifestyle
-          </option>
-          <option value="relationship">Relationships
-          </option>
-          <option value="health">Health and Wellness
-          </option>
-          <option value="news">News and Current Events
-          </option>
-          <option value="unfiltered">Unfiltered Conversations
-          </option>
-        </select>
-      </div>
+        <p class="infomation">
+          By joining the waitlist, you agree to receive email updates about the podcast launch. We respect your privacy and will not share your information.
+        </p>
 
-      <div class="button-container">
-        <button type="submit">
-          Join Waitlist
-        </button>
-      </div>
-    </form>
-  </section> 
+        <div class="divider">
+          <span>
+            or
+          </span>
+        </div>
+
+        <div class="socials">
+          <button class="social-login">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.72 1.22 9.22 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.48 5.38 2.56 13.22l7.98 6.2C12.36 13.2 17.74 9.5 24 9.5z"/>
+              <path fill="#4285F4" d="M46.1 24.5c0-1.67-.15-3.27-.43-4.83H24v9.13h12.45c-.54 2.9-2.18 5.36-4.6 7.04l7.05 5.48C43.09 37.36 46.1 31.4 46.1 24.5z"/>
+              <path fill="#FBBC05" d="M10.54 28.42c-.48-1.42-.76-2.93-.76-4.42s.27-3 .76-4.42l-7.98-6.2C.92 16.6 0 20.2 0 24s.92 7.4 2.56 10.62l7.98-6.2z"/>
+              <path fill="#34A853" d="M24 48c6.48 0 11.9-2.13 15.87-5.78l-7.05-5.48c-1.96 1.32-4.48 2.1-8.82 2.1-6.26 0-11.64-3.7-13.46-8.92l-7.98 6.2C6.48 42.62 14.62 48 24 48z"/>
+            </svg>
+            <a href="https://myaccount.google.com/">
+              Connect with Google
+            </a>
+          </button>
+          <button class="social-login">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M16.365 1.43c0 1.14-.47 2.2-1.25 3.02-.86.9-2.2 1.6-3.42 1.5-.16-1.14.42-2.34 1.15-3.14.78-.87 2.15-1.52 3.52-1.38zM20.45 17.3c-.46 1.05-.68 1.52-1.27 2.45-.82 1.28-1.98 2.88-3.4 2.9-1.26.01-1.58-.82-3.28-.82s-2.05.8-3.3.83c-1.38.03-2.43-1.46-3.26-2.74-2.26-3.5-2.5-7.6-1.1-9.77.99-1.54 2.57-2.45 4.1-2.45 1.62 0 2.63.83 3.96.83 1.29 0 2.07-.84 3.95-.84 1.36 0 2.8.74 3.78 2.01-3.33 1.82-2.8 6.56.82 7.6z"/>
+            </svg>
+            <a href="https://support.apple.com/en-ng/111001?device-type=mac">
+              Connect with Apple
+            </a>
+          </button>
+          <button class="social-login"> 
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#1877F2" d="M24 12c0-6.63-5.37-12-12-12S0 5.37 0 12c0 6 4.39 10.95 10.13 11.85v-8.39H7.08V12h3.05V9.41c0-3.02 1.8-4.69 4.56-4.69 1.32 0 2.7.24 2.7.24v2.97h-1.52c-1.5 0-1.97.93-1.97 1.88V12h3.35l-.54 3.46h-2.81v8.39C19.61 22.95 24 18 24 12z"/>
+            </svg>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr#">
+              Connect with Facebook
+            </a>
+          </button>
+        </div>
+      </form>
+    </section> 
   <footer>
     <p> © 2026 Private Podcast. All rights reserved.</p>
   </footer>

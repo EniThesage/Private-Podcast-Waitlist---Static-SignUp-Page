@@ -100,14 +100,12 @@ input:focus, select:focus {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .form-group-name { 
     margin-bottom: 20px;
     width: 50%;
     flex: 1;
-    display: flex;
     flex-direction: column;
 }
 
@@ -209,4 +207,68 @@ footer {
     margin-top: 40px;
     font-size: 14px;
     color: #999;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .form-group-name {
+        width: 100%;
+    }
+
+    #first-name {
+        margin-bottom: 5px;
+    }
+
+    button.waitlist {
+        width: 100%;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 30px 25px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .social-login svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .social-login {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .form-row {
+    gap: 14px;
+  }
+  
+  button.waitlist {
+    width: 70%;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
 }

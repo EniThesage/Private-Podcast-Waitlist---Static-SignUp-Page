@@ -253,6 +253,14 @@ footer {
         font-size: 13px;
         padding: 10px;
     }
+
+    select:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -280,5 +288,5 @@ footer {
     background-color: #4A90E2;
     margin: 10px auto 0;
     border-radius: 2px;
-}
+    }
 }
